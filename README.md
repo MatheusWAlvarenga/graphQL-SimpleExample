@@ -54,7 +54,7 @@ To run the application locally, follow these steps:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/GraphQL-SimpleExample.git
+git clone https://github.com/MatheusWAlvarenga/GraphQL-SimpleExample.git
 cd GraphQL-SimpleExample
 ```
 
