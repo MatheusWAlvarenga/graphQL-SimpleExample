@@ -4,7 +4,7 @@
  <div align="center">
       <img width="200" alt="GraphQL Logo" src="https://github.com/MatheusWAlvarenga/graphQL-SimpleExample/assets/94935750/2f8c6fec-4167-49b2-8db4-e08fc9c79249">
 
-</div>!
+</div>
 
 
 
