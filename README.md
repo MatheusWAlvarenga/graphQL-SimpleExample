@@ -2,9 +2,10 @@
 <h1 align="center">GraphQL SimpleExample</h1>
 
  <div align="center">
-      <img width="150" alt="I'm Here mobile" src="https://github.com/MatheusWAlvarenga/graphQL-SimpleExample/assets/94935750/2584a7d4-7a12-48fc-9d91-acc74a70727d">
+      <img width="200" alt="GraphQL Logo" src="https://github.com/MatheusWAlvarenga/graphQL-SimpleExample/assets/94935750/2f8c6fec-4167-49b2-8db4-e08fc9c79249">
 
-</div>
+</div>!
+
 
 
 
