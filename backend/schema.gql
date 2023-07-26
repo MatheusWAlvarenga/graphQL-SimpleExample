@@ -4,6 +4,7 @@
 # -----------------------------------------------
 
 type Mutation {
+  clearList: String!
   createUser(name: String!): User!
 }
 

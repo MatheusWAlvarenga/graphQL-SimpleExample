@@ -22,4 +22,10 @@ export class UserResolver {
 
     return user
   }
+
+  @Mutation(() => String)
+  async clearList() {
+    this.data = []
+    return 'Empty list'
+  }
 }

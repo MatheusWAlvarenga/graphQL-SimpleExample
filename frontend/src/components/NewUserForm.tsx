@@ -17,6 +17,12 @@ export function NewUserForm() {
 
   const [createUser] = useMutation(CREATE_USER)
 
+  function handleName(value: string) {
+    if (!value) return
+
+    setName(value)
+  }
+
   async function handleCreateUser(event: FormEvent) {
     event.preventDefault()
 
@@ -27,20 +33,21 @@ export function NewUserForm() {
         name,
       },
       refetchQueries: [GET_USER],
-      //   update: (cache, { data: { createUser } }) => {
-      //     const { users } = client.readQuery({ query: GET_USER })
+      // update: (cache, { data: { createUser } }) => {
+      //   const { users } = client.readQuery({ query: GET_USER })
 
-      //     cache.writeQuery({
-      //       query: GET_USER,
-      //       data: {
-      //         users: {
-      //           ...users,
-      //           createUser,
-      //         },
+      //   cache.writeQuery({
+      //     query: GET_USER,
+      //     data: {
+      //       users: {
+      //         ...users,
+      //         createUser,
       //       },
-      //     })
-      //   },
+      //     },
+      //   })
+      // },
     })
+    setName('')
   }
 
   return (
@@ -48,7 +55,7 @@ export function NewUserForm() {
       <input
         type='text'
         value={name}
-        onChange={(item) => setName(item.target.value)}
+        onChange={(item) => handleName(item.target.value)}
       />
       <button type='submit'>Enviar</button>
     </form>

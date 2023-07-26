@@ -1,12 +1,13 @@
 import { gql, useQuery } from '@apollo/client'
 import { NewUserForm } from './components/NewUserForm'
+import { ClearList } from './components/ClearList'
 
 type User = {
   id: string
   name: string
 }
 
-// eslint-disable-next-line
+// eslint-disable-next-line react-refresh/only-export-components
 export const GET_USER = gql`
   query {
     users {
@@ -18,8 +19,6 @@ export const GET_USER = gql`
 
 function App() {
   const { data, loading } = useQuery<{ users: User[] }>(GET_USER)
-
-  console.log(data)
 
   if (loading) {
     return <p>Carregando...</p>
@@ -33,6 +32,7 @@ function App() {
         ))}
       </ul>
       <NewUserForm />
+      {data?.users && data.users.length > 0 && <ClearList />}
     </div>
   )
 }
